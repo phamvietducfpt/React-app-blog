@@ -1,8 +1,4 @@
 body {
-  background: url("../assets/images/background-image.jpg") no-repeat center /cover;
-  margin: 0;
-  height:inherit;
-  width:inherit;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -14,7 +10,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-html{
-  height:100%;
-  width:100%;
+html,body{
+  margin:0;
 }

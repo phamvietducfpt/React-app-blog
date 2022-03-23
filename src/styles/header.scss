@@ -1,0 +1,149 @@
+.navbar-container {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	box-sizing: border-box;
+}
+.header-navbar {
+	background-image: linear-gradient(-150deg,var(--main_color) ,#FAE7B4);
+}
+.navbar {
+	.navbar-brand {
+		width: 8rem;
+		height: 3.3rem;
+		margin: 0 0.5rem;
+		display: flex;
+		box-sizing: border-box;
+		.navbar-logo {
+			width: 50%;
+			background: url("../assets/images/brand-logo.png") no-repeat center/contain;
+			height: 100%;
+		}
+	}
+	.navbar-name {
+		width: 50%;
+		height: 100%;
+		font-size: 1.5rem;
+		text-decoration: none;
+		padding: 0.2rem 0.2rem 0.2rem 0;
+		color: var(--privary_brand_title);
+	}
+	.form-search {
+		width: 22rem;
+		height: 100%;
+		box-sizing: border-box;
+	}
+	.input-search {
+		width: 20rem;
+		background-color: transparent;
+		border: 0.1rem solid var(--privary_border_input);
+	}
+	.button-search {
+		background: url("../assets/images/search_black_18dp.svg") no-repeat center/ 80%;
+		width: 2rem;
+	}
+	.navbar-login {
+		width: 6rem;
+		margin-right: 2rem;
+		display: flex;
+	}
+	.link-login {
+		text-decoration: none;
+		font-size: 1.1rem;
+		text-align: center;
+		width: 4rem;
+		color: var(--privary_black_text);
+		padding: 0.4rem;
+	}
+	.account-cirle {
+		background: url("../assets/images/account_circle_black_18dp.svg") no-repeat center/contain;
+		width: 2rem;
+	}
+}
+.second-navbar {
+	border-bottom: 1px solid #414141;
+	.nav-label {
+		width: 20rem;
+		box-sizing: border-box;
+		display: block;
+	}
+	.label-name {
+		text-decoration: none;
+		font-size: 1.6rem;
+		padding: .4rem .7rem .4rem .4rem;
+		color: var(--main_color) !important;
+	}
+	.label-title {
+		text-decoration: none;
+		font-size: 1.1rem;
+		padding: 0.2rem;
+		color: var(--privary_link)
+	}
+	.navbar-collapse {
+		.nav-link {
+			color: var(--privary_text) ;
+			padding: .5rem 1.5rem;
+		}
+	}
+	.navbar-toggler {
+		//background-color: transparent;
+		background-color:var(--privary_link) !important;
+		border: 1px solid ;
+		width: 2rem;
+		height: 2.5rem;
+		justify-content: center;
+		background: url("../assets/images/menu_black_18dp.svg") no-repeat center/ 80%;
+		box-sizing: border-box;
+		padding: .5rem;
+	}
+	.dropdown-menu{
+		background: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+	}
+}
+@media only screen and (max-width:768px) {
+	html {
+		font-size: 80%;
+	}
+	.header-navbar {
+		.navbar-brand {
+			width: 6rem;
+		}
+	}
+	.navbar {
+		.button-search {
+			width: 3rem;
+		}
+		.navbar-login {
+			width: 2rem;
+			box-sizing: border-box;
+			height: 3rem;
+			padding: 0;
+			margin: 0;
+		}
+		.link-login {
+			display: none;
+		}
+	}
+}
+@media only screen and (min-width:576px) and (max-width:768px) {
+	.navbar {
+		.form-search {
+			width: 19rem;
+		}
+		.input-search {
+			width: 16rem;
+			margin-right: 0.2rem;
+		}
+	}
+}
+@media only screen and (max-width:576px) {
+	.navbar {
+		.form-search {
+			width: 15rem;
+		}
+		.input-search {
+			width: 12rem;
+			margin-right: 0.1rem;
+		}
+	}
+}

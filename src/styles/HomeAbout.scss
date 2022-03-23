@@ -1,0 +1,92 @@
+.container-about{  
+    position: sticky;
+    top:0;  
+    margin:0 auto;
+    .container-info-about, .container-home-instagram,.container-info-social,.container-tag{
+        margin-bottom:1rem;
+    }
+    .container-info-about{
+        background-color: transparent;
+        border:0;
+        img{
+            width:12em;
+            height:8em;
+            max-height: 10em;
+            border-radius: 0.7em;
+        }
+        .card-body{
+            padding: .5em 0;
+            .card-title{
+                font-size: 1.4em;
+                font-weight: 450;
+                &:hover {
+                  color:var(--privary_text);
+                  opacity: 0.5;
+                }
+            }
+            .card-text{
+                font-size:.8em;
+                max-height:4em;
+                overflow:hidden;
+            }   
+        }  
+    }
+    .container-home-instagram{
+        p{
+            font-size:1.4em;
+            margin:0;
+        }
+        .flex-img-instagram{
+            width:100%;
+            margin-left:-.5em;
+            display:flex;
+            max-height: 12em;
+            flex-wrap: wrap;
+            overflow:hidden;
+            .img-instagram{
+                width:5.625em;
+                height: 5.625em;
+                padding:.5em;
+            }
+        }
+    }
+    .container-info-social{
+        p{
+            font-size:1.4em;
+            margin:0;
+        }
+        .flex-container-social{
+            display:flex;
+            margin-left:-.4em;
+            flex-wrap: wrap;
+            max-height: 3em;
+            overflow:auto;
+            div{
+                width:2em;
+                height:2em;
+                margin:.4em;
+                border-radius: 50%;
+                background-color: #fff;
+            }
+        }     
+    }
+    .container-tag{
+        p{
+            font-size:1.4em;
+            margin:0;
+        }
+        .flex-container-tag{
+            display:flex;
+            flex-wrap: wrap;
+            max-height: 4.5em;
+            overflow: visible;
+            a{
+                padding:.1em .3em;
+                border-radius: .3em;
+                background-color: #fff;
+                margin: .3em .3em .3em 0 ;
+            }
+        }
+    }
+
+}

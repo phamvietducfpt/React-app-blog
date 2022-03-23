@@ -1,0 +1,13 @@
+.container-favorite-video{
+    margin:3rem 0;
+    .favorite-header{
+        height:5em;
+        display:flex;
+        align-items: center;
+        .favorite-title{
+            font-size:1.6em;
+            padding:.5em;
+        }
+    }
+
+}

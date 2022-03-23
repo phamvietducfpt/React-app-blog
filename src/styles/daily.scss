@@ -1,0 +1,122 @@
+.Daily-header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    .Daily-title {
+      font-size: 1.6em;
+      padding: 0.5em;
+      display: inline-block;
+      margin: 0;
+      color: var(--privary_text);
+    }
+  }
+  .carousel-daily {
+    width: 70%;
+   // height: 40rem;
+    .container-slide-daily {
+         width:100%;
+        // height:100%;
+      .container-card-daily {
+        background-color: transparent;
+        border-color: var(--privary_border);
+        .author-profile {
+          height: 2.5em;
+          align-items: center;
+          display: flex;
+          .profile-picture {
+            width: 2.5em;
+            height: 2.5em;
+            border-radius: 50%;
+            padding: 0.35em;
+          }
+          .profile-name {
+            padding: 0.5em 0.3em;
+            text-transform: capitalize;
+            font-weight: 500;
+            margin: 0;
+          }
+        }
+        .card-img-top {
+          height: 22em;
+          .slick-arrow {
+            display: none !important;
+          }
+          .slick-slider,
+          .slick-slider div {
+            height: 20em;
+          }
+          img {
+            height: 100%;
+            width: 100%;
+          }
+          .slick-dots {
+            bottom: -2em;
+            .slick-active button::before {
+              color: #04619f;
+            }
+            button::before {
+              color: var(--privary_text);
+            }
+          }
+          .area-emotions {
+            max-width: 40%;
+            height: 2em;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            //align-items: flex-start;
+            img {
+              width: fit-content;
+              padding: 0.2em;
+              margin: 0 0.5em;
+            }
+          }
+        }
+        .card-body {
+          position: relative;
+          .hashtag {
+            position: absolute;
+            bottom: 1em;
+            right: 1em;
+            max-width: 20em;
+            overflow: hidden;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            a {
+              margin: 0 0.5em;
+              padding: 0.1em 0.3em;
+              border-radius: 0.2rem;
+              background-color: var(--privary_border);
+            }
+            a:hover {
+              color: var(--privary_text);
+              cursor: pointer;
+            }
+          }
+          .time-profile-daily {
+            :hover {
+              color: var(--privary_link);
+            }
+          }
+        }
+      }
+    }
+    button{
+        height:2rem;
+        width:2rem;
+        top:50%;
+        background: #000;
+        border-radius: 50%;
+        padding:.5em;
+    }
+    .carousel-control-prev{
+        left:-2.5em;
+    }
+    .carousel-control-next{
+        right:-2.5em;
+    }
+  }
+  
